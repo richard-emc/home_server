@@ -36,3 +36,19 @@ harddrive
     └── TVseries    
     └── music    
     └── musicvideo
+
+Each service is available on its own ports:
+
+| Service      | Port  |
+| ------------ | ----- |
+| transmission | 5656  |
+| nzbget       | 6789  |
+| filebot      | 7676  |
+| sonarr       | 8989  |
+| radarr       | 7878  |
+| bazarr       | 6767  |
+| jackett      | 9117  |
+| plex         | 32400 |
+| portainer    | 9000  |
+| heimdall     | 8888  |
+| netdata      | 19999 |
