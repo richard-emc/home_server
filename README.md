@@ -1,5 +1,10 @@
-# docker_ms
+Home Server
 
+Self hosted server running on a X86 system. The server runs Debian12/OMV and several other applications deployed using docker
+
+
+Hardware 
+- 
 
 harddrive
 └── docker_homepage
