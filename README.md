@@ -11,6 +11,7 @@ Self hosted server running on a X86 system. The server runs Debian12/OMV and sev
 ## :computer:&nbsp; Infrastructure
 
 [debian12](https://www.openmediavault.org/) Installed on raid1
+
 [openmediavault](https://www.openmediavault.org/) installed on top of debian12
 
 | Component    | Details |
