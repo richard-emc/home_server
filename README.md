@@ -1,7 +1,6 @@
 <div align="center">
-<br/>
-<img src=![OMV Screenshot](./images/OMV_image.png)
- align="center" width="144px" height="144px"/>
+  <img src="./images/OMV_image.png" alt="OMV Screenshot" width="144">
+</div>
  Home Server
 
 Self hosted server running on a X86 system. The server runs Debian12/OMV and several other applications deployed using docker
