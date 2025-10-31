@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./images/OMV_image.png" alt="OMV Screenshot" width="144">
+  <img src="./images/OMV_Image.png" alt="OMV Screenshot" width="144">
 </div>
  Home Server
 
