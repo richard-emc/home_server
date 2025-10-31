@@ -1,6 +1,8 @@
 <div align="center">
 <br/>
-<img src="https://user-images.githubusercontent.com/6564442/119241148-b009a080-bb54-11eb-8786-293265711f5c.png" align="center" width="144px" height="144px"/>Home Server
+<img src=![OMV Screenshot](./images/OMV_image.png)
+ align="center" width="144px" height="144px"/>
+ Home Server
 
 Self hosted server running on a X86 system. The server runs Debian12/OMV and several other applications deployed using docker
 
