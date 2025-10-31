@@ -8,11 +8,25 @@
 
 Self hosted server running on a X86 system. The server runs Debian12/OMV and several other applications deployed using docker
 
+## :computer:&nbsp; Infrastructure
 
-Hardware 
-- 
-- 
-- 
+[debian12](https://www.openmediavault.org/) Installed on raid1
+[openmediavault](https://www.openmediavault.org/) installed on top of debian12
+
+| Component    | Details |
+|--------|---------------------------------------------|
+| CPU    | Intel Core i5-4460                          |
+| Cooler | Original                                    |
+| RAM    | 8GB DDR3                                    |
+| GPU    | Integrated                                  |
+| PSU    | Pico PSU 160W                               |
+| DISK1  | SSD 120GB(OS)                               |
+| DISK2  | SSD 120GB(OS)                               |
+| DISK3  | HDD 4TB(Data)                               |
+| DISK4  | HDD 4TB(Data)                               |
+
+## :straight_ruler:&nbsp; Random Tips and Tricks
+
 harddrive
 └── docker_homepage
     ├── homepage
