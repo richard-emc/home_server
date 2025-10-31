@@ -1,7 +1,10 @@
 <div align="center">
   <img src="./images/OMV_Image.png" alt="OMV Screenshot" width="144">
 </div>
- Home Server
+
+### My openmediavault home server :computer:
+
+</div>
 
 Self hosted server running on a X86 system. The server runs Debian12/OMV and several other applications deployed using docker
 
