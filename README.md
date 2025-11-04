@@ -118,15 +118,18 @@ dev/sdc
 ```
 
 Each service is available on its own ports
-| Service      | Port  |
-| ------------ | ----- |
-| transmission | 5656  |
-| nzbget       | 6789  |
-| filebot      | 7676  |
-| sonarr       | 8989  |
-| radarr       | 7878  |
-| bazarr       | 6767  |
-| jackett      | 9117  |
-| portainer    | 9000  |
-| heimdall     | 8888  |
-| netdata      | 19999 |
+| Service       | Port  |
+| ------------  | ----- |
+| Home assistant| 8123  |
+| zigbee2mqtt   | 8080  |
+| immich server | 2283  |
+| beszel        | 8090  |
+| sonarr        | 8989  |
+| radarr        | 7878  |
+| radarr        | 9696  |
+| jellyfin      | 8096  |
+| jellyseerr    | 5055  |
+| qbittorrent   | 8081  |
+| mealie        | 9925  |
+| code-server   | 8443  |
+
