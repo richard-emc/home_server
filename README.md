@@ -46,37 +46,36 @@ Self hosted server running on a X86 system. The server runs Debian12/OMV and sev
 |   └── Utilities       → mealie, code Server                    |
 +----------------------------------------------------------------+
 
-/dev/md0   RAID1   →  /boot
-/dev/sdc   BTRFS   →  /Compose
-/dev/sdc   BTRFS   →  /Media
-/dev/sdc   BTRFS   →  /Backup
+/dev/md0   RAID1   →  /boot  
+/dev/sdc   BTRFS   →  /Compose  
+/dev/sdc   BTRFS   →  /Media  
+/dev/sdc   BTRFS   →  /Backup  
 
 home_server/
-├── compose/                   # Individual Docker Compose files per stack
-│   ├── media_server.yml       # Jellyfin, Sonarr, Radarr, etc.
-│   ├── home_assistant.yml     # Home automation
-│   ├── photos.yml             # Immich (photo manager)
-│   └── utils.yml              # Utility services (nginx, backups, etc.)
+├── compose/                   # Individual Docker Compose files per stack  
+│   ├── media_server.yml       # Jellyfin, Sonarr, Radarr, etc.  
+│   ├── home_assistant.yml     # Home automation  
+│   ├── photos.yml             # Immich (photo manager)  
+│   └── utils.yml              # Utility services (nginx, backups, etc.)  
 │
-├── config/                    # Persistent configuration for each container
-│   ├── jellyfin/
-│   ├── sonarr/
-│   ├── radarr/
-│   ├── immich/
-│   └── home_assistant/
+├── config/                    # Persistent configuration for each container  
+│   ├── jellyfin/  
+│   ├── sonarr/  
+│   ├── radarr/  
+│   ├── immich/  
+│   └── home_assistant/  
 │
-├── data/                      # Local storage volumes
-│   ├── media/                 # Movies, series, music, photos
-│   └── backups/               # Automatic system and config backups
+├── data/                      # Local storage volumes  
+│   ├── media/                 # Movies, series, music, photos  
+│   └── backups/               # Automatic system and config backups  
 │
-├── scripts/                   # Helper scripts (setup, backup, monitoring)
+├── scripts/                   # Helper scripts (setup, backup, monitoring)  
 │
-├── .env                       # Environment variables (ports, paths, secrets)
-└── README.md
+├── .env                       # Environment variables (ports, paths, secrets)  
+└── README.md  
 
 
-Each service is available on its own ports:
-
+Each service is available on its own ports
 | Service      | Port  |
 | ------------ | ----- |
 | transmission | 5656  |
