@@ -51,7 +51,8 @@ Self hosted server running on a X86 system. The server runs Debian12/OMV and sev
 /dev/sdc   BTRFS   →  /Media  
 /dev/sdc   BTRFS   →  /Backup  
 
-SDC/  
+```bash
+dev/sdc  
 ├── Compose/                   #  
 │   └── dockge/                # dockge Docker Management  
 │       └── data/              #  
@@ -114,7 +115,7 @@ SDC/
 │  
 ├── .env                       # Environment variables (ports, paths, secrets)    
 └── README.md   
-
+```
 
 Each service is available on its own ports
 | Service      | Port  |
