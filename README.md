@@ -51,28 +51,69 @@ Self hosted server running on a X86 system. The server runs Debian12/OMV and sev
 /dev/sdc   BTRFS   →  /Media  
 /dev/sdc   BTRFS   →  /Backup  
 
-home_server/
-├── compose/                   # Individual Docker Compose files per stack  
-│   ├── media_server.yml       # Jellyfin, Sonarr, Radarr, etc.  
-│   ├── home_assistant.yml     # Home automation  
-│   ├── photos.yml             # Immich (photo manager)  
-│   └── utils.yml              # Utility services (nginx, backups, etc.)  
-│
-├── config/                    # Persistent configuration for each container  
-│   ├── jellyfin/  
-│   ├── sonarr/  
-│   ├── radarr/  
-│   ├── immich/  
-│   └── home_assistant/  
-│
-├── data/                      # Local storage volumes  
-│   ├── media/                 # Movies, series, music, photos  
-│   └── backups/               # Automatic system and config backups  
-│
-├── scripts/                   # Helper scripts (setup, backup, monitoring)  
-│
-├── .env                       # Environment variables (ports, paths, secrets)  
-└── README.md  
+SDC/  
+├── Compose/                   #  
+│   └── dockge/                # dockge Docker Management  
+│       └── data/              #  
+│       └── compose.yml        #   
+│   └── home_assistant         # Home automation  
+│       └── homeassistant/     #   
+│           └── config/        #   
+│       └── mqttt/             # Mosquitto Broker  
+│           └── config/        #   
+│       └── zigbee2mqttt/      #   
+│           └── config/        #   
+│       └── compose.yml        #  
+│   └── Immich                 # Immich Photo manager  
+│       └── postgress/         # Databe for Immich  
+│           └── config/        #    
+│       └── compose.yml        #  
+│   └── internet_monitor       # Monitor internet and home system  
+│       └── beszel_data_agent/ #  
+│           └── config/        #   
+│       └── beszel_data/       #   
+│           └── config/        #   
+│       └── beszel_socket/     #   
+│           └── config/        #   
+│       └── compose.yml        #  
+│   └── media_server           # Monitor internet and home system  
+│       └── jellyfin/          # Media Player   
+│           └── config/        #   
+│       └── jellyseer/         # Media Request  
+│           └── config/        #   
+│       └── prowlar/           # Torrent Indexer Anget  
+│           └── config/        #  
+│       └── qbittorrent/       # Torrent Download Agent  
+│           └── config/        #  
+│       └── radarr/            # Manage Movies  
+│           └── config/        #   
+│       └── sonarr/            # Manage TV Series  
+│           └── config/        #   
+│       └── compose.yml        #  
+│   └── utilities              # dockers that are out of scope  
+│       └── code-server/       # Open Vs Code server  
+│           └── config/        #  
+│       └── mealie/            # Manage Recepies  
+│           └── config/        #   
+│       └── compose.yml        #  
+│  
+│  
+├── Media/                     # Media Folder   
+│   └── HDs/                   # Copy of home External HDs  
+│   └── immich/                # Media Folder for Immich  
+│   └── media_server/          # Media Folder  
+│       └── dowloads/          # qbittorrent download folder  
+│       └── filmes/            # movies folder for Jellyfin  
+│       └── series/            # TV Series folder for Jellyfin  
+│  
+├── Backup/                    # Local storage volumes    
+│   ├── media/                 # Movies, series, music, photos    
+│   └── backups/               # Automatic system and config backups   
+│  
+├── scripts/                   # Helper scripts (setup, backup, monitoring)   
+│  
+├── .env                       # Environment variables (ports, paths, secrets)    
+└── README.md   
 
 
 Each service is available on its own ports
@@ -85,7 +126,6 @@ Each service is available on its own ports
 | radarr       | 7878  |
 | bazarr       | 6767  |
 | jackett      | 9117  |
-| plex         | 32400 |
 | portainer    | 9000  |
 | heimdall     | 8888  |
 | netdata      | 19999 |
